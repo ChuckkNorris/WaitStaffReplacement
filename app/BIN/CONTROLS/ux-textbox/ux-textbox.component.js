@@ -1,4 +1,4 @@
-System.register(['angular2/core', './CONTROLS/export'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,33 +10,35 @@ System.register(['angular2/core', './CONTROLS/export'], function(exports_1, cont
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, export_1;
-    var AppComponent;
+    var core_1;
+    var UxTextBoxComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (export_1_1) {
-                export_1 = export_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            UxTextBoxComponent = (function () {
+                function UxTextBoxComponent() {
+                    this.textChange = new core_1.EventEmitter();
                 }
-                AppComponent = __decorate([
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', core_1.EventEmitter)
+                ], UxTextBoxComponent.prototype, "textChange", void 0);
+                UxTextBoxComponent = __decorate([
                     core_1.Component({
-                        moduleId: 'app/',
-                        selector: 'app',
-                        template: "\n        <ux-textbox [(text)]=\"myText\"></ux-textbox>\n        <!-- Changing this ^ isn't changing myText-->\n        <input type=\"text\" [(ngModel)]=\"myText\" />\n        {{myText}}\n    ",
-                        directives: [export_1.UxTextBoxComponent]
+                        moduleId: 'app/CONTROLS/ux-textbox/',
+                        selector: 'ux-textbox',
+                        template: "\n        <input type=\"text\" [(ngModel)]=\"text\" (ngModelChange)=\"textChange.emit($event)\" />\n        {{text}}\n    ",
+                        inputs: ['text'],
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], UxTextBoxComponent);
+                return UxTextBoxComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("UxTextBoxComponent", UxTextBoxComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=ux-textbox.component.js.map

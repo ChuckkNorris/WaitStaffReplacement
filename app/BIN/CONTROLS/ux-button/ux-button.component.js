@@ -1,4 +1,4 @@
-System.register(['angular2/core', './CONTROLS/export'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,33 +10,33 @@ System.register(['angular2/core', './CONTROLS/export'], function(exports_1, cont
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, export_1;
-    var AppComponent;
+    var core_1;
+    var UxButtonComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (export_1_1) {
-                export_1 = export_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            UxButtonComponent = (function () {
+                function UxButtonComponent() {
                 }
-                AppComponent = __decorate([
+                UxButtonComponent.prototype.ngOnInit = function () {
+                    console.log(this.text);
+                };
+                UxButtonComponent = __decorate([
                     core_1.Component({
-                        moduleId: 'app/',
-                        selector: 'app',
-                        template: "\n        <ux-textbox [(text)]=\"myText\"></ux-textbox>\n        <!-- Changing this ^ isn't changing myText-->\n        <input type=\"text\" [(ngModel)]=\"myText\" />\n        {{myText}}\n    ",
-                        directives: [export_1.UxTextBoxComponent]
+                        moduleId: 'app/CONTROLS/ux-button/',
+                        selector: 'ux-button',
+                        templateUrl: 'ux-button.component.html',
+                        inputs: ['text']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], UxButtonComponent);
+                return UxButtonComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("UxButtonComponent", UxButtonComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=ux-button.component.js.map

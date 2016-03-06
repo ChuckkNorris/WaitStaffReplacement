@@ -4,7 +4,7 @@
     "scripts": {
         "start": "concurrent \"npm run tsc:w\" \"npm run lite\" \"npm run export\" ",    
         "tsc": "tsc",
-        "export": "scriptcs exporter.csx -- app/TEMPLATES",
+        "export": "scriptcs exporter.csx -- app/TEMPLATES app/CONTROLS",
         "tsc:w": "tsc -w",
         "lite": "lite-server",
         "typings": "typings",
