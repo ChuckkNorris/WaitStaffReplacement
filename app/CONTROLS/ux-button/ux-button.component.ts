@@ -14,4 +14,6 @@ export class UxButtonComponent implements OnInit {
     ngOnInit() { 
         console.log(this.text);
     }
+    
+    
 }
