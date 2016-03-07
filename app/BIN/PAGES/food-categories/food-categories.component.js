@@ -24,8 +24,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 FoodCategoriesComponent.prototype.ngOnInit = function () { };
                 FoodCategoriesComponent = __decorate([
                     core_1.Component({
+                        moduleId: 'app/PAGES/food-categories/',
                         selector: 'food-categories',
-                        template: '<br/>YOLO: <ux-textbox [(text)]="coolText"></ux-textbox> {{coolText}}',
+                        templateUrl: 'food-categories.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], FoodCategoriesComponent);

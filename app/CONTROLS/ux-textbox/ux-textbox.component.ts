@@ -5,7 +5,6 @@ import {Component, Output,EventEmitter} from 'angular2/core';
     selector: 'ux-textbox',
     template: `
         <input type="text" [(ngModel)]="text" (ngModelChange)="textChange.emit($event)" />
-        {{text}}
     `,
     inputs: ['text'],
 })

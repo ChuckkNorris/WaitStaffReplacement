@@ -1,9 +1,9 @@
 import {Component, OnInit} from 'angular2/core';
 
 @Component({
+    moduleId: 'app/PAGES/food-categories/',
     selector: 'food-categories',
-    template: '<br/>YOLO: <ux-textbox [(text)]="coolText"></ux-textbox> {{coolText}}',
-
+    templateUrl: 'food-categories.component.html'
 })
 
 export class FoodCategoriesComponent implements OnInit {
