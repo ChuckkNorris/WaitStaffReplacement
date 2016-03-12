@@ -1,4 +1,4 @@
-System.register(['./food-categories/food-categories.component'], function(exports_1, context_1) {
+System.register(['./food-categories/food-categories.component', './pay-tab/pay-tab.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     return {
@@ -6,6 +6,11 @@ System.register(['./food-categories/food-categories.component'], function(export
             function (food_categories_component_1_1) {
                 exports_1({
                     "FoodCategoriesComponent": food_categories_component_1_1["FoodCategoriesComponent"]
+                });
+            },
+            function (pay_tab_component_1_1) {
+                exports_1({
+                    "PayTabComponent": pay_tab_component_1_1["PayTabComponent"]
                 });
             }],
         execute: function() {

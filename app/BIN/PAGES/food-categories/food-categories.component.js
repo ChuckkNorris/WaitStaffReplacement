@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', '../../SERVICES/export', '../../TEMPLATES/export'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,25 +10,37 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, export_1, export_2;
     var FoodCategoriesComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (export_1_1) {
+                export_1 = export_1_1;
+            },
+            function (export_2_1) {
+                export_2 = export_2_1;
             }],
         execute: function() {
             FoodCategoriesComponent = (function () {
-                function FoodCategoriesComponent() {
+                function FoodCategoriesComponent(categoryService) {
+                    this.categoryService = categoryService;
                 }
-                FoodCategoriesComponent.prototype.ngOnInit = function () { };
+                FoodCategoriesComponent.prototype.ngOnInit = function () {
+                    this.categories = this.categoryService.getRestaurant();
+                    console.log('loading categories');
+                };
                 FoodCategoriesComponent = __decorate([
                     core_1.Component({
                         moduleId: 'app/PAGES/food-categories/',
                         selector: 'food-categories',
-                        templateUrl: 'food-categories.component.html'
+                        templateUrl: 'food-categories.component.html',
+                        providers: [export_1.CategoryService],
+                        directives: [export_2.CategoryThumbComponent]
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [export_1.CategoryService])
                 ], FoodCategoriesComponent);
                 return FoodCategoriesComponent;
             }());
