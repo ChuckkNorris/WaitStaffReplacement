@@ -11,31 +11,29 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var CategoryThumbComponent;
+    var AdminComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            CategoryThumbComponent = (function () {
-                function CategoryThumbComponent() {
+            AdminComponent = (function () {
+                function AdminComponent() {
                 }
-                CategoryThumbComponent.prototype.ngOnInit = function () { };
-                CategoryThumbComponent = __decorate([
+                AdminComponent.prototype.ngOnInit = function () { };
+                AdminComponent = __decorate([
                     core_1.Component({
-                        moduleId: 'app/TEMPLATES/category-thumb/',
-                        selector: 'category-thumb',
-                        templateUrl: 'category-thumb.component.html',
-                        styleUrls: ['category-thumb.component.css'],
-                        inputs: ['category']
+                        moduleId: 'app/PAGES/admin/',
+                        selector: 'admin',
+                        templateUrl: 'admin.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], CategoryThumbComponent);
-                return CategoryThumbComponent;
+                ], AdminComponent);
+                return AdminComponent;
             }());
-            exports_1("CategoryThumbComponent", CategoryThumbComponent);
+            exports_1("AdminComponent", AdminComponent);
         }
     }
 });
-//# sourceMappingURL=category-thumb.component.js.map
+//# sourceMappingURL=admin.component.js.map

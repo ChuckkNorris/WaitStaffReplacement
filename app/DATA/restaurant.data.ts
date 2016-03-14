@@ -12,7 +12,7 @@ export const RESTAURANT_TEST_DATA: Restaurant = {
                         description: 'Farm fresh cage free eggs, hash browns, choice of toast Add breakfast meat',
                         name: 'The Snooze Classic', 
                         price: 8.99,
-                        pictureUrl: '',
+                        pictureUrl: 'http://snoozeeatery.com/wp-content/themes/bootstrap/public/images/menu_02_1500x498.jpg',
                         rating: 3.4
                     },
                     {
@@ -29,6 +29,32 @@ export const RESTAURANT_TEST_DATA: Restaurant = {
                         pictureUrl: '',
                         rating: 3.4
                     },
+                ]
+            },
+            {
+                name: 'the art of hollandaise',
+                items [
+                    {
+                        name: 'Ham Benedict III'
+                        description: '',
+                        price: 8.99,
+                        pictureUrl: 'http://snoozeeatery.com/wp-content/themes/bootstrap/public/images/menu_03_1500x498.jpg',
+                        rating: 4
+                        
+                    }
+                ]
+            },
+             {
+                name: 'the art of hollandaise',
+                items [
+                    {
+                        name: 'Ham Benedict III'
+                        description: '',
+                        price: 8.99,
+                        pictureUrl: 'http://snoozeeatery.com/wp-content/themes/bootstrap/public/images/menu_03_1500x498.jpg',
+                        rating: 4
+                        
+                    }
                 ]
             }
         ]

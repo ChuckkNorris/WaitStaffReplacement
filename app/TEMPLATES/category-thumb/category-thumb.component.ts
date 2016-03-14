@@ -5,6 +5,7 @@ import { Category } from '../../models/export';
     moduleId: 'app/TEMPLATES/category-thumb/',
     selector: 'category-thumb',
     templateUrl: 'category-thumb.component.html',
+    styleUrls: ['category-thumb.component.css'],
     inputs: ['category']
 })
 

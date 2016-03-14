@@ -35,7 +35,8 @@ System.register(['angular2/core', 'angular2/router', './PAGES/export'], function
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }),
                     router_1.RouteConfig([
-                        { path: '/FoodCategories', name: 'FoodCategories', useAsDefault: true, component: export_1.FoodCategoriesComponent }
+                        { path: '/FoodCategories', name: 'FoodCategories', useAsDefault: true, component: export_1.FoodCategoriesComponent },
+                        { path: '/Admin', name: 'Admin', component: export_1.AdminComponent },
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

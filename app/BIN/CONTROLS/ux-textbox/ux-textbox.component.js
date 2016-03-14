@@ -30,8 +30,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         moduleId: 'app/CONTROLS/ux-textbox/',
                         selector: 'ux-textbox',
-                        template: "\n        <input type=\"text\" [(ngModel)]=\"text\" (ngModelChange)=\"textChange.emit($event)\" />\n    ",
-                        inputs: ['text'],
+                        template: "\n    <div style=\"display:block;\">\n        <label>{{label}}</label>\n        <input type=\"text\" [(ngModel)]=\"text\" (ngModelChange)=\"textChange.emit($event)\" />\n    </div>\n    ",
+                        inputs: ['text', 'label'],
                     }), 
                     __metadata('design:paramtypes', [])
                 ], UxTextBoxComponent);

@@ -1,0 +1,29 @@
+img {
+   flex-shrink: 0;
+   min-height: 100%;
+   min-width: 100%;
+}
+
+div.container {
+    display: inline-block;
+    position: relative;
+  
+}
+
+div.text-background {
+      width: inherit;
+    position: absolute;
+    bottom: 5px;
+    color: white;
+     background-color: rgba(0,0,0,0.6);
+}
+
+div.fill {
+   
+    width:400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

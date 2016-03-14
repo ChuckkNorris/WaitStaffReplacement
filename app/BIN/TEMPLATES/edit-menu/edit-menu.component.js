@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', '../../CONTROLS/export'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,32 +10,34 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var CategoryThumbComponent;
+    var core_1, export_1;
+    var EditMenuComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (export_1_1) {
+                export_1 = export_1_1;
             }],
         execute: function() {
-            CategoryThumbComponent = (function () {
-                function CategoryThumbComponent() {
+            EditMenuComponent = (function () {
+                function EditMenuComponent() {
                 }
-                CategoryThumbComponent.prototype.ngOnInit = function () { };
-                CategoryThumbComponent = __decorate([
+                EditMenuComponent.prototype.ngOnInit = function () { };
+                EditMenuComponent = __decorate([
                     core_1.Component({
-                        moduleId: 'app/TEMPLATES/category-thumb/',
-                        selector: 'category-thumb',
-                        templateUrl: 'category-thumb.component.html',
-                        styleUrls: ['category-thumb.component.css'],
-                        inputs: ['category']
+                        moduleId: 'app/TEMPLATES/edit-menu/',
+                        selector: 'edit-menu',
+                        templateUrl: 'edit-menu.component.html',
+                        directives: [export_1.UxTextBoxComponent]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], CategoryThumbComponent);
-                return CategoryThumbComponent;
+                ], EditMenuComponent);
+                return EditMenuComponent;
             }());
-            exports_1("CategoryThumbComponent", CategoryThumbComponent);
+            exports_1("EditMenuComponent", EditMenuComponent);
         }
     }
 });
-//# sourceMappingURL=category-thumb.component.js.map
+//# sourceMappingURL=edit-menu.component.js.map

@@ -1,4 +1,10 @@
-<div style="display: inline;">
-    <h1>{{category.name}}</h1>
-    <label>{{category.description}}</label>    
+<div class="container">
+    <div class="text-background">
+         <h1>{{category.name}}</h1>
+    </div>
+   
+    <!--<label>{{category.description}}</label>-->
+    <div class="fill">
+        <img [src]="category.items[0].pictureUrl" alt="">
+    </div>
 </div>      
