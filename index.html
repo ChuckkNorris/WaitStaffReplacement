@@ -4,6 +4,7 @@
     <base href="/" />
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/ng2rest/rest.js"></script>
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
 
@@ -13,6 +14,7 @@
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
 
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
+      <script src="node_modules/angular2/bundles/http.dev.js"></script>
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
@@ -20,10 +22,11 @@
           app: {
             format: 'register',
             defaultExtension: 'js'
-          }
+          },
+          '/ng2rest': {'defaultExtension': "js"}
         }
       });
-      System.import('app/bin/main')
+      System.import('app/bin/app/main')
             .then(null, console.error.bind(console));
     </script>
 

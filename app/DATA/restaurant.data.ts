@@ -1,4 +1,5 @@
 import { Restaurant, Menu, Category, Item } from '../MODELS/export';
+
 export const RESTAURANT_TEST_DATA: Restaurant = {
     name: "Snooze AM Eatery",
     address: "2262 Larimer St, Denver, CO 80205",
@@ -6,7 +7,7 @@ export const RESTAURANT_TEST_DATA: Restaurant = {
     menu: {
         categories: [
             {
-                name: 'Flavors from the Hen',
+                name: 'Flavors fro m the Hen',
                 items: [
                     {
                         description: 'Farm fresh cage free eggs, hash browns, choice of toast Add breakfast meat',
@@ -33,9 +34,9 @@ export const RESTAURANT_TEST_DATA: Restaurant = {
             },
             {
                 name: 'the art of hollandaise',
-                items [
+                items: [
                     {
-                        name: 'Ham Benedict III'
+                        name: 'Ham Benedict III',
                         description: '',
                         price: 8.99,
                         pictureUrl: 'http://snoozeeatery.com/wp-content/themes/bootstrap/public/images/menu_03_1500x498.jpg',
@@ -46,9 +47,9 @@ export const RESTAURANT_TEST_DATA: Restaurant = {
             },
              {
                 name: 'the art of hollandaise',
-                items [
+                items: [
                     {
-                        name: 'Ham Benedict III'
+                        name: 'Ham Benedict III',
                         description: '',
                         price: 8.99,
                         pictureUrl: 'http://snoozeeatery.com/wp-content/themes/bootstrap/public/images/menu_03_1500x498.jpg',

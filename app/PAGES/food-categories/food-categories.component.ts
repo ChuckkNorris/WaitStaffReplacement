@@ -17,7 +17,7 @@ export class FoodCategoriesComponent implements OnInit {
 
     ngOnInit() { 
         this.categories = this.categoryService.getRestaurant();
-        console.log('loading categories');
+       // console.log('loading cate gories');
     }
     
     private categories: Category[];
